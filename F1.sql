@@ -1,16 +1,15 @@
-	--NAMES of f1 drivers in alphabetica order
-	 
-	Select *
-	from 
-	f1..drivers$
-	order by driverRef asc
+--NAMES of f1 drivers in alphabetica order
+Select *
+from 
+f1..drivers$
+order by driverRef asc
 
-	--Oldest driver in the dataset
-	Select*
+--Oldest driver in the dataset
+Select*
 from f1..drivers$
-	 order by driver_dob ASC
+order by driver_dob ASC
 
---	  How many French Drivers and Spanish in f1 Union
+-- How many French Drivers and Spanish in f1 
 
 --Temp Table for French Drivers
 
@@ -79,7 +78,6 @@ where
 Top_drivers_per_nationality <= 3
 
 
---
 --CASE Subquery
 --Trying to find the elite drivers in F1 History
 
